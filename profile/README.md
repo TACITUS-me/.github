@@ -38,16 +38,16 @@ The current flagship public repos are maintained under Giulio Catanzariti's prof
 
 ## Public Organization Repositories
 
-This organization currently contains early public references, historical prototypes, and upstream forks used during the first TACITUS build phase. The active public portfolio is linked above while the organization is being cleaned into a canonical home.
+This organization currently contains early public references, historical prototypes, and upstream forks used during the first TACITUS build phase. The active public portfolio is linked above while the organization is being consolidated into the canonical home.
 
 | Repository | Status |
 |---|---|
-| [DIALECTICA_by_TACITUS_A2](https://github.com/TACITUS-me/DIALECTICA_by_TACITUS_A2) | Earlier Python reasoning-core prototype. Superseded by DIALECTICA v3. |
-| [Open_Starting_Kpipeline_TACITUS](https://github.com/TACITUS-me/Open_Starting_Kpipeline_TACITUS) | Earlier open knowledge-pipeline notebook. Superseded by the polished public pipeline repo. |
-| [AGON-humanfriction-detection-TACITUS](https://github.com/TACITUS-me/AGON-humanfriction-detection-TACITUS) | Early AGON/human-friction fork. Superseded by the active AGON repo. |
-| [regulatory-intelligence-assistant-4TACITUS](https://github.com/TACITUS-me/regulatory-intelligence-assistant-4TACITUS) | Regulatory-intelligence reference fork. |
-| [semantica4tacitus](https://github.com/TACITUS-me/semantica4tacitus) | Semantic-layer reference fork. |
-| [cozo4TACITUS](https://github.com/TACITUS-me/cozo4TACITUS) | Graph/vector database reference fork. |
+| [DIALECTICA_by_TACITUS_A2](https://github.com/TACITUS-me/DIALECTICA_by_TACITUS_A2) | Historical Python reasoning-core prototype. Superseded by DIALECTICA v3. |
+| [Open_Starting_Kpipeline_TACITUS](https://github.com/TACITUS-me/Open_Starting_Kpipeline_TACITUS) | Historical open knowledge-pipeline notebook. Superseded by the polished public pipeline repo. |
+| [AGON-humanfriction-detection-TACITUS](https://github.com/TACITUS-me/AGON-humanfriction-detection-TACITUS) | Archived early AGON/human-friction fork. Superseded by the active AGON repo. |
+| [regulatory-intelligence-assistant-4TACITUS](https://github.com/TACITUS-me/regulatory-intelligence-assistant-4TACITUS) | Archived regulatory-intelligence reference fork. |
+| [semantica4tacitus](https://github.com/TACITUS-me/semantica4tacitus) | Archived semantic-layer reference fork. |
+| [cozo4TACITUS](https://github.com/TACITUS-me/cozo4TACITUS) | Archived graph/vector database reference fork. |
 
 ## Principles
 
