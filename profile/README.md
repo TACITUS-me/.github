@@ -80,3 +80,7 @@ The current pipeline format is separate from native Context and DIALECTICA capsu
 The archived [Semantica](https://github.com/TACITUS-me/semantica4tacitus), [Cozo](https://github.com/TACITUS-me/cozo4TACITUS) and [regulatory assistant](https://github.com/TACITUS-me/regulatory-intelligence-assistant-4TACITUS) repositories are upstream reference forks, not original TACITUS products. The [early AGON fork](https://github.com/TACITUS-me/AGON-humanfriction-detection-TACITUS) is archived. Original attribution and licenses apply.
 
 [Discuss a pilot](https://tacitus.me/pricing/) · [hello@tacitus.me](mailto:hello@tacitus.me)
+
+## Current readiness and what comes next
+
+[Public repository readiness and 20 concrete refinements](https://github.com/sargonxg/sargonxg/blob/main/docs/FRESH_START.md) records local checks, historical/experimental boundaries and the next useful gate. The accepted source improvements are on the default branches. Current PRAXIS source passes its verification, audit and five-scenario authenticated emulator lane; hosted generation and paid upgrades remain paused.
