@@ -9,7 +9,9 @@ We build explicit knowledge structures, task-specific context capsules and revie
 
 ## Enter the House of Evidence
 
-![Original 8-bit TACITUS mansion: source archive, context workshop and review room](https://raw.githubusercontent.com/TACITUS-me/.github/main/tacitus-demo/mansion.png)
+![Original TACITUS Source Workshop: saved sources, typed structure, bounded context and human review](https://raw.githubusercontent.com/sargonxg/sargonxg/a91027079c8ff8ebbd3623898a5e03a13cd80df5/assets/tacitus-source-workshop-8bit.png)
+
+*Original concept illustration; the scene and documents are fictional. [Artwork and reuse](https://github.com/sargonxg/sargonxg/blob/a91027079c8ff8ebbd3623898a5e03a13cd80df5/docs/VISUAL_IDENTITY.md).*
 
 A small lesson with a real purpose: recover the missing condition, preserve who said what, place events in time, and review before exporting. **[Clone and play the original adventure](https://github.com/TACITUS-me/.github/blob/main/TACITUS_GUIDE.md)**. The lesson needs no API key or account and uses fictional dispatches; it is separate from the working policy tools below.
 
