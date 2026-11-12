@@ -7,11 +7,17 @@ We build explicit knowledge structures, task-specific context capsules and revie
 [Explore tacitus.me](https://tacitus.me/) · [Build guide](https://tacitus.me/developers/) · [LinkedIn](https://www.linkedin.com/company/tacitus-me) · [Public project map](https://github.com/sargonxg/sargonxg/blob/main/docs/PUBLIC_PROJECT_MAP.md)
 
 
-## Enter the House of Evidence
+## A research guild for policy work
 
-![Original TACITUS Source Workshop: saved sources, typed structure, bounded context and human review](https://raw.githubusercontent.com/sargonxg/sargonxg/a91027079c8ff8ebbd3623898a5e03a13cd80df5/assets/tacitus-source-workshop-8bit.png)
+![Original fictional TACITUS Research Guild: sources, institutional procedure, specialist work and human review](https://raw.githubusercontent.com/sargonxg/sargonxg/4bbb321385be568b068e313aceb7ec7797c48be1/assets/tacitus-research-guild-8bit.png)
 
-*Original concept illustration; the scene and documents are fictional. [Artwork and reuse](https://github.com/sargonxg/sargonxg/blob/a91027079c8ff8ebbd3623898a5e03a13cd80df5/docs/VISUAL_IDENTITY.md).*
+*Original fictional concept art for the product direction, not a screenshot or a claim that all specialist agents are live. People, documents and dates are invented. [Artwork and reuse](https://github.com/sargonxg/sargonxg/blob/4bbb321385be568b068e313aceb7ec7797c48be1/docs/VISUAL_IDENTITY.md).*
+
+The goal is one workspace where a policy team can apply saved sources, its own methods and institutional knowledge to a useful reviewed brief. The separate [invited App](https://app.tacitus.me/) is developing that experience. Public tools demonstrate inspectable parts of the workflow; broader specialist coordination, organisational sharing and a contributor ecosystem remain development goals. We will measure usefulness with real analysts before claiming better answers.
+
+[Focused product direction and top 20 actions](https://github.com/sargonxg/sargonxg/blob/main/docs/GROWTH_PLAN.md).
+
+### Play the House of Evidence
 
 A small lesson with a real purpose: recover the missing condition, preserve who said what, place events in time, and review before exporting. **[Clone and play the original adventure](https://github.com/TACITUS-me/.github/blob/main/TACITUS_GUIDE.md)**. The lesson needs no API key or account and uses fictional dispatches; it is separate from the working policy tools below.
 
