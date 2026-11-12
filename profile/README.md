@@ -13,9 +13,9 @@ We build explicit knowledge structures, task-specific context capsules and revie
 
 *Original fictional concept art for the product direction, not a screenshot or a claim that all specialist agents are live. People, documents and dates are invented. [Artwork and reuse](https://github.com/sargonxg/sargonxg/blob/4bbb321385be568b068e313aceb7ec7797c48be1/docs/VISUAL_IDENTITY.md).*
 
-The goal is one workspace where a policy team can apply saved sources, its own methods and institutional knowledge to a useful reviewed brief. The separate [invited App](https://app.tacitus.me/) is developing that experience. Public tools demonstrate inspectable parts of the workflow; broader specialist coordination, organisational sharing and a contributor ecosystem remain development goals. We will measure usefulness with real analysts before claiming better answers.
+The goal is one private-by-default workspace for small teams in **corporate policy, conflict analysis and US/EU legislative analysis**. Teams apply saved evidence, institutional procedures and curated packs to a reviewed brief, with bounded research on demand. The separate [invited App](https://app.tacitus.me/) is developing that experience. Public tools demonstrate inspectable parts of the workflow; broader specialist coordination, organisational sharing and a contributor ecosystem remain development goals. We will measure usefulness with real analysts before claiming better answers.
 
-[Focused product direction and top 20 actions](https://github.com/sargonxg/sargonxg/blob/main/docs/GROWTH_PLAN.md).
+[Three-domain direction and top 20 actions](https://github.com/sargonxg/sargonxg/blob/main/docs/GROWTH_PLAN.md) · [Prepared expert/user validation protocol](https://github.com/sargonxg/sargonxg/blob/main/docs/VALIDATION_PROTOCOL.md).
 
 ### Play the House of Evidence
 
@@ -79,7 +79,7 @@ The one-task model smoke test does not establish a general quality or efficiency
 
 [12-paper research index](https://github.com/sargonxg/TACITUS-Knowledge-Pipeline-open/tree/main/research) · [Verified workflows and limits](https://github.com/sargonxg/sargonxg/blob/main/docs/VERIFIED_WORKFLOWS_2026-11-10.md)
 
-The current pipeline format is separate from native Context and DIALECTICA capsules. A verified hosted PRAXIS attachment bridge remains in development.
+The current pipeline format is separate from native Context and DIALECTICA capsules. The [compatibility matrix](https://github.com/sargonxg/tacitus-workbench/blob/main/docs/FORMAT_COMPATIBILITY.md) records versions, offset units, rights and review boundaries. No automatic conversion or hosted attachment bridge is claimed.
 
 ## Historical organization repositories
 
@@ -92,3 +92,10 @@ The archived [Semantica](https://github.com/TACITUS-me/semantica4tacitus), [Cozo
 ## Current readiness and what comes next
 
 [Public repository readiness and 20 concrete refinements](https://github.com/sargonxg/sargonxg/blob/main/docs/FRESH_START.md) records local checks, historical/experimental boundaries and the next useful gate. The accepted source improvements are on the default branches. Current PRAXIS source passes its verification, audit and five-scenario authenticated emulator lane; hosted generation and paid upgrades remain paused.
+
+
+### Independent maintenance checkpoint · 12 November 2026
+
+The reference pipeline and organization starter each pass 42 tests and their actual historical example build. Workbench passes 113 configured tests with zero skips, 14 importer tests and its inventory checks using pinned native helpers. [Reproduction and limits](https://github.com/sargonxg/tacitus-workbench/blob/main/docs/LOCAL_VERIFICATION_2026-11-12.md). Native research has separately scoped local checkpoints; it is not a new App dependency.
+
+Retirement notices and recoverable Git exports are prepared for eligible prototypes/forks; archival awaits appropriate access and final dependencies. No permanent deletion is planned. Existing archives retain their history and upstream credit. Public examples, fictional 8-bit teaching scenes and recorded model outputs retain their separate labels. The three-domain study is prepared; participant tasks, qualified reviewers and customer evidence remain outstanding.
