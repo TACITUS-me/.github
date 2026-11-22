@@ -1,103 +1,55 @@
 # TACITUS
 
-**Data infrastructure for Policy / Political AI.**
+**A conversation workspace for reusable team context.** Save the instructions, sources and examples that made one conversation useful. Bring them into the next conversation or give a teammate the same starting point.
 
-We build explicit knowledge structures, task-specific context capsules and reviewable artifacts. The aim is better saliency and efficiency in AI generation: preserve the distinctions that change an answer, then measure the full cost of producing it.
+[Open the App](https://app.tacitus.me/) · [Try a conversation](https://app.tacitus.me/try.html) · [TACITUS website](https://tacitus.me/) · [App availability](https://app.tacitus.me/api/health)
 
-[Explore tacitus.me](https://tacitus.me/) · [Build guide](https://tacitus.me/developers/) · [LinkedIn](https://www.linkedin.com/company/tacitus-me) · [Public project map](https://github.com/sargonxg/sargonxg/blob/main/docs/PUBLIC_PROJECT_MAP.md)
+## Keep the context behind the work
 
+- **Capsules** hold the background, working instructions and sources a task needs.
+- **Artefacts** show the expected result through a template, a good example or a previous deliverable.
+- **Knowledge graphs** connect saved statements to exact passages and source editions. A semantic layer selects the relationships and evidence relevant to a task.
 
-## A research guild for policy work
+For a new task, attach the team’s working rules, an example of the expected output and the exact source to use. The App keeps the selected versions with the conversation so you can inspect them later. Its experimental public practice uses local previews and template-based outlines. See the availability endpoint for hosted generation.
 
-![Original fictional TACITUS Research Guild: sources, institutional procedure, specialist work and human review](https://raw.githubusercontent.com/sargonxg/sargonxg/4bbb321385be568b068e313aceb7ec7797c48be1/assets/tacitus-research-guild-8bit.png)
+## Run the public reference
 
-*Original fictional concept art for the product direction, not a screenshot or a claim that all specialist agents are live. People, documents and dates are invented. [Artwork and reuse](https://github.com/sargonxg/sargonxg/blob/4bbb321385be568b068e313aceb7ec7797c48be1/docs/VISUAL_IDENTITY.md).*
+The open Python compiler shows how exact sources become a provenance graph, a bounded capsule and a proposed review sheet. In the pinned example, NIST kept its citation-checking guidance and changed its reference number between the April draft and July final. Checking both editions also shows that the final identifier pointed to a different action in the draft.
 
-The goal is one private-by-default workspace for small teams in **corporate policy, conflict analysis and US/EU legislative analysis**. Teams apply saved evidence, institutional procedures and curated packs to a reviewed brief, with bounded research on demand. The separate [invited App](https://app.tacitus.me/) is developing that experience. Public tools demonstrate inspectable parts of the workflow; broader specialist coordination, organisational sharing and a contributor ecosystem remain development goals. We will measure usefulness with real analysts before claiming better answers.
-
-[Three-domain direction and top 20 actions](https://github.com/sargonxg/sargonxg/blob/main/docs/GROWTH_PLAN.md) · [Prepared expert/user validation protocol](https://github.com/sargonxg/sargonxg/blob/main/docs/VALIDATION_PROTOCOL.md).
-
-### Play the House of Evidence
-
-A small lesson with a real purpose: recover the missing condition, preserve who said what, place events in time, and review before exporting. **[Clone and play the original adventure](https://github.com/TACITUS-me/.github/blob/main/TACITUS_GUIDE.md)**. The lesson needs no API key or account and uses fictional dispatches; it is separate from the working policy tools below.
-
-## Choose the smallest useful starting point
-
-| You need to… | Start here | What is ready |
-| --- | --- | --- |
-| Prepare evidence-backed policy context | [Pinned organization pipeline](https://github.com/TACITUS-me/Open_Starting_Kpipeline_TACITUS) | Offline graph/capsule/review-sheet build; Python standard library. |
-| Inspect a draft against its source | [Workbench](https://github.com/sargonxg/tacitus-workbench) | Local/static source, graph and artifact views; model execution is separate. |
-| Study historical political evidence | [Middle East toolkit](https://github.com/sargonxg/Syria-political-analysis) | Dated snapshots, exact document spans and bounded research exports. |
-| Understand the design and limits | [Methods and credit](https://github.com/sargonxg/sargonxg/blob/main/docs/RESEARCH_AND_DESIGN.md) | Papers, upstream contributions, implemented differences and evaluation still needed. |
-
-We are building reusable infrastructure, not a new authority over the sources. Our testable contribution is making selection, structure, evidence dependencies and review state explicit. Whether that improves an analyst’s decisions or a model’s answers must be established by matched human evaluation.
-
-## Start with a working policy task
-
-Prepare a historical Syria negotiation-policy note from exact source passages. Build the ontology and semantic layer, run an evidence-inspection agent, and inspect the cited draft beside its source wording.
+Use Python 3.11 or newer. The command needs no API key and makes zero model calls.
 
 ```sh
 git clone https://github.com/sargonxg/TACITUS-Knowledge-Pipeline-open.git
-cd TACITUS-Knowledge-Pipeline-open/reference-pipeline
-PYTHONPATH=src python -m unittest discover -s tests -v
+cd TACITUS-Knowledge-Pipeline-open
+git checkout --detach be8640a6a2b5ff2755c884e9e7eae981bb98e62e
+cd reference-pipeline
+PYTHONPATH=src python3 examples/citation-guidance/compile.py --output build/citation-guidance
+cmp examples/citation-guidance/proof.json build/citation-guidance/proof.json
+diff -r examples/citation-guidance/compiled build/citation-guidance/compiled
 ```
 
-[Run the complete workflow](https://github.com/sargonxg/TACITUS-Knowledge-Pipeline-open/blob/main/reference-pipeline/docs/model-workflows.md) · [Inspect the actual cloud run](https://github.com/sargonxg/TACITUS-Knowledge-Pipeline-open/tree/main/reference-pipeline/examples/syria-negotiation/agent-step-2) · [Open the workbench guide](https://github.com/sargonxg/tacitus-workbench/blob/main/apps/workbench/docs/policy-workflow.md)
+Open `build/citation-guidance/proof.json` for the proposed judgment and `build/citation-guidance/compiled/brief.md` for the source passages and reviewer checks. The companion export provides PROV-O provenance and SKOS concepts with optional SHACL validation. The build verifies evidence assembly. Research on answer quality and review time remains in progress.
 
-![Actual model-assisted policy draft inspected beside historical evidence](https://raw.githubusercontent.com/sargonxg/TACITUS-Knowledge-Pipeline-open/main/assets/showcase/policy-workflow-desktop.png)
+[Exact-source example and outputs](https://github.com/sargonxg/TACITUS-Knowledge-Pipeline-open/tree/be8640a6a2b5ff2755c884e9e7eae981bb98e62e/reference-pipeline/examples/citation-guidance) · [Evaluation protocol](https://github.com/sargonxg/TACITUS-Knowledge-Pipeline-open/blob/be8640a6a2b5ff2755c884e9e7eae981bb98e62e/reference-pipeline/benchmarks/model-evaluation-plan.json)
 
-The recording was produced with Cloudflare on 10 November 2026. The model inspected selected evidence before drafting; code retained exact quotations and qualifications. The result remains a draft for human review. It is a historical source exercise, not a current Syria assessment.
+## Public projects
 
-## What you can build
-
-| Layer | Working reference |
+| Project | What you can inspect |
 | --- | --- |
-| Data structures | [Exact sources](https://github.com/sargonxg/TACITUS-Knowledge-Pipeline-open/blob/main/reference-pipeline/docs/sources.md), [ontology rules](https://github.com/sargonxg/TACITUS-Knowledge-Pipeline-open/blob/main/reference-pipeline/docs/ontology.md), [semantic layers](https://github.com/sargonxg/TACITUS-Knowledge-Pipeline-open/blob/main/reference-pipeline/docs/semantic-layers.md), qualified graph records and source versions. |
-| Context capsules | Bounded task context with entity and relation definitions, exact evidence, conditions, review checks and explicit omissions. |
-| Artifacts | Populated evidence review sheets and model-assisted cited desk notes, with source wording kept alongside the draft. |
-| Agent workflows | [Finite evidence-inspection agent](https://github.com/sargonxg/TACITUS-Knowledge-Pipeline-open/blob/main/reference-pipeline/src/tacitus_pipeline/agent.py): selected evidence lookup, then a draft. No arbitrary browsing, code execution, publication or approval tool. |
-| Evaluation | [Real request/response recordings](https://github.com/sargonxg/TACITUS-Knowledge-Pipeline-open/tree/main/reference-pipeline/examples/syria-negotiation), local tests and a separate held-out model-evaluation plan. |
+| [Knowledge Pipeline](https://github.com/sargonxg/TACITUS-Knowledge-Pipeline-open) | The standard-library reference compiler, source pins, ontology and semantic-layer examples. |
+| [Workbench](https://github.com/sargonxg/tacitus-workbench) | Local readers for source-linked material, graphs and recorded drafts. |
+| [DIALECTICA](https://github.com/sargonxg/A3_DIALECTICAbyTACITUS_v3) | Experimental capsule contracts and graph projections. |
+| [KAIROS](https://github.com/sargonxg/KAIROS-temporal-vision-TACITUS) | Experimental temporal relationships for knowledge graphs. |
 
-## Public code and current scope
+Each project documents its own license, formats and verification. The public compiler, hosted App and local Workbench use separate contracts. Review format compatibility before moving an output between them.
 
-Active research code currently spans this organization and the founder's `sargonxg` account. These links identify the actual maintained locations; the repositories have not been transferred.
+[Format guide](https://github.com/sargonxg/tacitus-workbench/blob/main/docs/FORMAT_COMPATIBILITY.md) · [Research and credits](https://github.com/sargonxg/TACITUS-Knowledge-Pipeline-open/tree/main/research) · [Public project map](https://github.com/sargonxg/sargonxg/blob/main/docs/PUBLIC_PROJECT_MAP.md) · [Teaching demo](https://github.com/TACITUS-me/.github/blob/main/TACITUS_GUIDE.md)
 
-| Repository | Useful work | Scope |
-| --- | --- | --- |
-| [Knowledge Pipeline](https://github.com/sargonxg/TACITUS-Knowledge-Pipeline-open) | Source → graph → capsule → cited model draft; cloud/local HTTP adapters and bounded agent | Runnable reference; 42 reference tests checked at the accepted pin on 11 November 2026. Apache-2.0 code. |
-| [Workbench](https://github.com/sargonxg/tacitus-workbench) | Inspect source-linked objects, exact evidence, qualifications and recorded agent steps | Local/static tools; separate from hosted PRAXIS. |
-| [Syria / Middle East toolkit](https://github.com/sargonxg/Syria-political-analysis) | Historical research atlas, source records and a source-preserving pipeline exporter | Reconciled research toolkit: 203 local tests pass; two service-dependent checks skipped. Dated evidence, not a live feed. |
-| [AGON](https://github.com/sargonxg/AGON) | Conflict-analysis research and exact evidence-span verification | Experimental; Apache-2.0 original code with preserved third-party notices. Native/database/security/container checks pass locally; model quality and hosted acceptance remain separate. |
-| [KAIROS](https://github.com/sargonxg/KAIROS-temporal-vision-TACITUS) | Temporal relationships and graph experiments | Local prototype; live-model acceptance is separate. Apache-2.0. |
-| [DIALECTICA v3](https://github.com/sargonxg/A3_DIALECTICAbyTACITUS_v3) | Native capsule contracts, review records, graph projections and CLI experiments | Experimental core; not a complete hosted ingestion product. Apache-2.0. |
-| [TCGC](https://github.com/sargonxg/TCGC_TACITUS-Conflict-Grammar-Corpus_BENCHMARK) | Conflict-grammar corpus and structural scorer; separate workflow-recording inspector | Alpha benchmark. **CC BY-NC-SA 4.0**; commercial reuse requires separate review. |
-| [PRAXIS](https://github.com/sargonxg/A4_PRAXIS_CLOUD_Work) | Agentic policy workspace source | Invitation-only hosted application. Generation and paid upgrades remain paused. |
+<details>
+<summary>Earlier roadmap and research projects</summary>
 
-## Evidence and research
+- [Research and design notes](https://github.com/sargonxg/sargonxg/blob/main/docs/RESEARCH_AND_DESIGN.md), [earlier roadmap](https://github.com/sargonxg/sargonxg/blob/main/docs/GROWTH_PLAN.md) and [validation protocol](https://github.com/sargonxg/sargonxg/blob/main/docs/VALIDATION_PROTOCOL.md).
+- [Organization starter pipeline](https://github.com/TACITUS-me/Open_Starting_Kpipeline_TACITUS) and [DIALECTICA A2](https://github.com/TACITUS-me/DIALECTICA_by_TACITUS_A2).
+- [Historical Syria and Middle East toolkit](https://github.com/sargonxg/Syria-political-analysis), [AGON evidence-span tools](https://github.com/sargonxg/AGON) and [TCGC alpha benchmark](https://github.com/sargonxg/TCGC_TACITUS-Conflict-Grammar-Corpus_BENCHMARK).
 
-The one-task model smoke test does not establish a general quality or efficiency gain. Both flat and structured drafts resolve their citations; structured context used more total tokens in this example. Citation identity, semantic entailment and expert approval are separate checks.
-
-[12-paper research index](https://github.com/sargonxg/TACITUS-Knowledge-Pipeline-open/tree/main/research) · [Verified workflows and limits](https://github.com/sargonxg/sargonxg/blob/main/docs/VERIFIED_WORKFLOWS_2026-11-10.md)
-
-The current pipeline format is separate from native Context and DIALECTICA capsules. The [compatibility matrix](https://github.com/sargonxg/tacitus-workbench/blob/main/docs/FORMAT_COMPATIBILITY.md) records versions, offset units, rights and review boundaries. No automatic conversion or hosted attachment bridge is claimed.
-
-## Historical organization repositories
-
-[Open_Starting_Kpipeline_TACITUS](https://github.com/TACITUS-me/Open_Starting_Kpipeline_TACITUS) pins the maintained runnable pipeline and retains the early notebooks as historical material. [DIALECTICA A2](https://github.com/TACITUS-me/DIALECTICA_by_TACITUS_A2) is the historical Python predecessor of v3.
-
-The archived [Semantica](https://github.com/TACITUS-me/semantica4tacitus), [Cozo](https://github.com/TACITUS-me/cozo4TACITUS) and [regulatory assistant](https://github.com/TACITUS-me/regulatory-intelligence-assistant-4TACITUS) repositories are upstream reference forks, not original TACITUS products. The [early AGON fork](https://github.com/TACITUS-me/AGON-humanfriction-detection-TACITUS) is archived. Original attribution and licenses apply.
-
-[Discuss a pilot](https://tacitus.me/pricing/) · [hello@tacitus.me](mailto:hello@tacitus.me)
-
-## Current readiness and what comes next
-
-[Public repository readiness and 20 concrete refinements](https://github.com/sargonxg/sargonxg/blob/main/docs/FRESH_START.md) records local checks, historical/experimental boundaries and the next useful gate. The accepted source improvements are on the default branches. Current PRAXIS source passes its verification, audit and five-scenario authenticated emulator lane; hosted generation and paid upgrades remain paused.
-
-
-### Independent maintenance checkpoint · 12 November 2026
-
-The reference pipeline and organization starter each pass 42 tests and their actual historical example build. Workbench passes 113 configured tests with zero skips, 14 importer tests and its inventory checks using pinned native helpers. [Reproduction and limits](https://github.com/sargonxg/tacitus-workbench/blob/main/docs/LOCAL_VERIFICATION_2026-11-12.md). Native research has separately scoped local checkpoints; it is not a new App dependency.
-
-Retirement notices and recoverable Git exports are prepared for eligible prototypes/forks; archival awaits appropriate access and final dependencies. No permanent deletion is planned. Existing archives retain their history and upstream credit. Public examples, fictional 8-bit teaching scenes and recorded model outputs retain their separate labels. The three-domain study is prepared; participant tasks, qualified reviewers and customer evidence remain outstanding.
-
-[AGON native/security/licensing and real PostgreSQL/container checkpoint](https://github.com/sargonxg/AGON/blob/main/docs/LOCAL_VERIFICATION_2026-11-12.md): accepted source, not a customer-benefit or production-release claim.
+</details>
