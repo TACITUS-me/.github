@@ -6,6 +6,16 @@ TACITUS helps a team capture its sources, working rules and the decisions behind
 
 [Company website](https://tacitus.me/) · [Explore the App](https://app.tacitus.me/) · [Technology](https://tacitus.me/structures/) · [Research and evaluation](https://tacitus.me/research/)
 
+## Three products, one research family
+
+| TACITUS App | Wind Tunnel | DOXA |
+| :--- | :--- | :--- |
+| <img src="assets/tacitus-guide.v1.webp" width="59" height="88" alt="TACITUS’s original notebook-carrying guide"> | <img src="assets/wind-tunnel-kite.v1.webp" width="85" height="88" alt="Kite, Wind Tunnel’s teal pixel bird"> | <img src="assets/doxa-analyst.v1.webp" width="85" height="88" alt="DOXA’s pixel owl reading two passages"> |
+| Attach and reuse your team’s context, capsules and artefacts. | Explore modeled audience responses and plan research with people. | Compare political framing and evidence in documents and speech. |
+| [Open App](https://app.tacitus.me/) · [How it works](https://tacitus.me/product/) | [Open Wind Tunnel](https://windtunnel.tacitus.me/) · [Research and benchmark](https://tacitus.me/research/wind-tunnel/) | [Code and local installation](https://github.com/sargonxg/DOXA-by-TACITUS) |
+
+Each companion identifies its product. Findings, model limitations and human review remain explicit in the working tools.
+
 ## Start with working code
 
 The [Knowledge Pipeline](https://github.com/sargonxg/TACITUS-Knowledge-Pipeline-open) builds source-linked graphs and bounded context from exact passages and authored interpretations. It includes a generic team-knowledge ontology, task layers, BM25 selection, bounded graph expansion and explicit App import.

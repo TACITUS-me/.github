@@ -1,0 +1,40 @@
+{
+  "schema": "tacitus-product-characters/1",
+  "published": "2026-11-23",
+  "scope": "Decorative product identity. Characters do not establish model capability, factual accuracy, human approval or completion.",
+  "characters": [
+    {
+      "id": "tacitus",
+      "product": "TACITUS App",
+      "asset": "/assets/brand/tacitus-guide.v1.webp",
+      "sha256": "2f0854dee6961f52a98c80b8c4c647190e7d94022f413a0048d9b346f68f8029",
+      "bytes": 67218,
+      "width": 1024,
+      "height": 1536,
+      "origin": "Original TACITUS guide; retained from the working App.",
+      "source": "https://app.tacitus.me/tacitus-guide.png"
+    },
+    {
+      "id": "wind-tunnel",
+      "product": "Wind Tunnel",
+      "asset": "/assets/brand/wind-tunnel-kite.v1.webp",
+      "sha256": "a6f569fa2a136d22225f99a06dbf1bfc831c792eee22e90deaa6fca0de5bb4bd",
+      "bytes": 42030,
+      "width": 256,
+      "height": 266,
+      "origin": "Existing Kite character; retained from the working Wind Tunnel App.",
+      "source": "https://windtunnel.tacitus.me/art/kite.webp"
+    },
+    {
+      "id": "doxa",
+      "product": "DOXA",
+      "asset": "/assets/brand/doxa-analyst.v1.webp",
+      "sha256": "f93034b671c7a61e2fb48f9db94c72712fc64e82af91eddd3c20d7aa1b9d2248",
+      "bytes": 100564,
+      "width": 1230,
+      "height": 1278,
+      "origin": "Original generated TACITUS artwork, 23 November 2026; owl reading two passages.",
+      "source": "https://github.com/sargonxg/DOXA-by-TACITUS"
+    }
+  ]
+}
